@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/horarios-usm/static/css/main.add86bfc.css",
+    "main.js": "/horarios-usm/static/js/main.18a4a30c.js",
+    "static/js/787.8fa01e24.chunk.js": "/horarios-usm/static/js/787.8fa01e24.chunk.js",
+    "index.html": "/horarios-usm/index.html",
+    "main.add86bfc.css.map": "/horarios-usm/static/css/main.add86bfc.css.map",
+    "main.18a4a30c.js.map": "/horarios-usm/static/js/main.18a4a30c.js.map",
+    "787.8fa01e24.chunk.js.map": "/horarios-usm/static/js/787.8fa01e24.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.add86bfc.css",
+    "static/js/main.18a4a30c.js"
+  ]
+}
