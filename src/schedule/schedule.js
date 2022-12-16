@@ -16,7 +16,7 @@ const schedule = [
         "teacher": "Lioubov Dombrovskaia",
         "number": 200, 
         "credits": 5,
-        "color": "#fff000"
+        "color": "#ff7171"
     },
     {
         "id": 2,
@@ -35,7 +35,7 @@ const schedule = [
         "teacher": "Cristian Correa",
         "number": 201, 
         "credits": 5,
-        "color": "#fff000"
+        "color": "#ff7171"
     },
     {
         "id": 3,
