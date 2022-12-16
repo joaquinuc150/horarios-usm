@@ -17,12 +17,12 @@ function Opciones({ramosPage, ramos, setRamos}) {
     return (a && b)
   }
 
-  const handleToggle = (value, index) => () => {
-    const currentIndex = checked.indexOf(index);
+  const handleToggle = (value) => () => {
+    const currentIndex = checked.indexOf(value.id);
     const newChecked = [...checked];
 
     if (currentIndex === -1) {
-      newChecked.push(index);
+      newChecked.push(value.id);
       setRamos([].concat(ramos, value))
     } else {
       newChecked.splice(currentIndex, 1);
@@ -42,7 +42,7 @@ function Opciones({ramosPage, ramos, setRamos}) {
         secondaryAction={
           <Checkbox
             edge="end"
-            checked={checked.indexOf(index) !== -1}
+            checked={checked.indexOf(value.id) !== -1}
             inputProps={{ 'aria-labelledby': labelId }}
           />
         }
