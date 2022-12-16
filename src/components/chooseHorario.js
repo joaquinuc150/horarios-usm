@@ -8,9 +8,17 @@ import Pagination  from '@mui/material/Pagination';
 import Checkbox from '@mui/material/Checkbox';
 import schedule from '../schedule/schedule';
 
-function Opciones({ramosPage, ramos, setRamos}) {
-  const [checked, setChecked] = React.useState([]);
+function compare( a, b ) {
+  if ( a.name < b.name ){
+    return -1;
+  }
+  if ( a.name > b.name ){
+    return 1;
+  }
+  return 0;
+}
 
+function Opciones({ramosPage, ramos, setRamos, checked, setChecked}) {
   function equalRamo(r, v) {
     const a = r.name === v.name;
     const b = r.number === v.number;
@@ -66,20 +74,21 @@ function Opciones({ramosPage, ramos, setRamos}) {
   })
 }
 
-export function ChooseHorario( {ramos, setRamos}) {
+export function ChooseHorario( {ramos, setRamos, checked, setChecked}) {
   const rowPerPages = 5
   const numberPages = Math.ceil(schedule.length / rowPerPages)
+  const sortSchedule = schedule.sort(compare)
   const [page, setPage] = React.useState(1);
-  const [ramosPage, setRamosPage] = React.useState(schedule.slice(0,rowPerPages))
+  const [ramosPage, setRamosPage] = React.useState(sortSchedule.slice(0,rowPerPages))
 
   useEffect(() => {
-    const newOptions = schedule.slice((page-1)*rowPerPages,page*rowPerPages)
+    const newOptions = sortSchedule.slice((page-1)*rowPerPages,page*rowPerPages)
     setRamosPage(newOptions)
-  }, [page])
+  }, [page, sortSchedule])
   
   return (
     <List dense sx={{ margin: '5%', width: '100%', bgcolor: 'background.paper' }}>
-      <Opciones ramosPage={ramosPage} setRamosPage={setRamosPage} ramos={ramos} setRamos={setRamos} />
+      <Opciones ramosPage={ramosPage} setRamosPage={setRamosPage} ramos={ramos} setRamos={setRamos} checked={checked} setChecked={setChecked} />
       <Pagination count={numberPages} page={page} onChange={(e, value) => setPage(value)} />
     </List>
   );

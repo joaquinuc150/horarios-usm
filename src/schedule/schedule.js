@@ -1,3 +1,5 @@
+import { colorAqua, colorBlue, colorGreen, colorOrange, colorPink, colorPurple, colorRed, colorYellow } from "../constants/constants";
+
 const schedule = [
     {
         "id": 1,
@@ -16,7 +18,7 @@ const schedule = [
         "teacher": "Lioubov Dombrovskaia",
         "number": 200, 
         "credits": 5,
-        "color": "#ff7171"
+        "color": colorRed
     },
     {
         "id": 2,
@@ -35,7 +37,7 @@ const schedule = [
         "teacher": "Cristian Correa",
         "number": 201, 
         "credits": 5,
-        "color": "#ff7171"
+        "color": colorRed
     },
     {
         "id": 3,
@@ -54,7 +56,7 @@ const schedule = [
         "teacher": "Ricardo Salas",
         "number": 200, 
         "credits": 5,
-        "color": "#ffee00"
+        "color": colorYellow
     },
     {
         "id": 4,
@@ -73,7 +75,7 @@ const schedule = [
         "teacher": "Rodrigo Olavarria",
         "number": 201, 
         "credits": 5,
-        "color": "#ffee00"
+        "color": colorYellow
     },
     {
         "id": 5,
@@ -92,7 +94,7 @@ const schedule = [
         "teacher": "Viktor Tapia",
         "number": 200, 
         "credits": 5,
-        "color": "#d000ff"
+        "color": colorPurple
     },
     {
         "id": 6,
@@ -111,7 +113,26 @@ const schedule = [
         "teacher": "Mauricio Solar",
         "number": 201, 
         "credits": 5,
-        "color": "#d000ff"
+        "color": colorPurple
+    },
+    {
+        "id": 7,
+        "name": "Analisis inteligente de datos",
+        "alias": "AID",
+        "hours": [
+            {
+                "day": "Martes",
+                "block": "9-10"
+            },
+            {
+                "day": "Jueves",
+                "block": "9-10"
+            }
+        ],
+        "teacher": "Carlos Valle",
+        "number": 200, 
+        "credits": 5,
+        "color": colorOrange
     },
     {
         "id": 8,
@@ -130,7 +151,7 @@ const schedule = [
         "teacher": "Juan Jerez",
         "number": 200, 
         "credits": 5,
-        "color": "#f2f80e"
+        "color": colorYellow
     },
     {
         "id": 9,
@@ -146,10 +167,10 @@ const schedule = [
                 "block": "13-14"
             }
         ],
-        "teacher": "Jose Luis Marti",
+        "teacher": "Jose Luis Marti (*)",
         "number": 201, 
         "credits": 5,
-        "color": "#f2f80e"
+        "color": colorYellow
     },
     {
         "id": 10,
@@ -168,7 +189,7 @@ const schedule = [
         "teacher": "Diego Arroyuelo",
         "number": 200, 
         "credits": 5,
-        "color": "#6f6fff" 
+        "color": colorBlue 
     },
     {
         "id": 11,
@@ -187,7 +208,7 @@ const schedule = [
         "teacher": "Jose Lino Contreras",
         "number": 200, 
         "credits": 5,
-        "color": "#ff0080"
+        "color": colorPink
     },
     {
         "id": 12,
@@ -206,7 +227,7 @@ const schedule = [
         "teacher": "Ricardo Nanculef",
         "number": 200, 
         "credits": 5,
-        "color": "#008000"
+        "color": colorGreen
     },
     {
         "id": 13,
@@ -225,7 +246,7 @@ const schedule = [
         "teacher": "Manuel Goyo",
         "number": 201, 
         "credits": 5,
-        "color": "#008000"
+        "color": colorGreen
     },
     {
         "id": 14,
@@ -244,7 +265,7 @@ const schedule = [
         "teacher": "Emilio Rojas",
         "number": 200, 
         "credits": 5,
-        "color": "#00ffff"
+        "color": colorAqua
     },
     {
         "id": 15,
@@ -263,7 +284,778 @@ const schedule = [
         "teacher": "Claudio Mena",
         "number": 201, 
         "credits": 5,
-        "color": "#00ffff"
+        "color": colorAqua
+    },
+    {
+        "id": 16,
+        "name": "Calidad y productividad de software",
+        "alias": "Calidad",
+        "hours": [
+            {
+                "day": "Viernes",
+                "block": "11-12"
+            },
+            {
+                "day": "Viernes",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Marcello Visconti",
+        "number": 200, 
+        "credits": 5,
+        "color": colorOrange
+    },
+    {
+        "id": 17,
+        "name": "Computacion grafica",
+        "alias": "CompGraf",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            },
+            {
+                "day": "Miercoles",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Claudio Lobos",
+        "number": 200, 
+        "credits": 5,
+        "color": colorOrange
+    },
+    {
+        "id": 18,
+        "name": "Computación científica",
+        "alias": "CC",
+        "hours": [
+            {
+                "day": "Martes",
+                "block": "9-10"
+            },
+            {
+                "day": "Martes",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Roberto Leon",
+        "number": 200, 
+        "credits": 5,
+        "color": colorGreen
+    },
+    {
+        "id": 19,
+        "name": "Computación científica",
+        "alias": "CC",
+        "hours": [
+            {
+                "day": "Martes",
+                "block": "3-4"
+            },
+            {
+                "day": "Martes",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Roberto Leon",
+        "number": 201, 
+        "credits": 5,
+        "color": colorGreen
+    },
+    {
+        "id": 20,
+        "name": "Estructuras de datos",
+        "alias": "EDD",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "9-10"
+            },
+            {
+                "day": "Martes",
+                "block": "9-10"
+            }
+        ],
+        "teacher": "Gabriel Carmona",
+        "number": 200, 
+        "credits": 5,
+        "color": colorBlue
+    },
+    {
+        "id": 21,
+        "name": "Estructuras de datos",
+        "alias": "EDD",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            },
+            {
+                "day": "Martes",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Juan Pablo Castillo",
+        "number": 201, 
+        "credits": 5,
+        "color": colorBlue
+    },
+    {
+        "id": 22,
+        "name": "Estructuras de datos",
+        "alias": "EDD",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "13-14"
+            },
+            {
+                "day": "Martes",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Roberto Diaz",
+        "number": 202, 
+        "credits": 5,
+        "color": colorBlue
+    },
+    {
+        "id": 23,
+        "name": "Estructuras Discretas",
+        "alias": "Discretas",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "7-8"
+            },
+            {
+                "day": "Miercoles",
+                "block": "7-8"
+            }
+        ],
+        "teacher": "Claudio Lobos",
+        "number": 200, 
+        "credits": 5,
+        "color": colorBlue
+    },
+    {
+        "id": 24,
+        "name": "Estructuras Discretas",
+        "alias": "Discretas",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "7-8"
+            },
+            {
+                "day": "Miercoles",
+                "block": "7-8"
+            }
+        ],
+        "teacher": "Jorge Diaz",
+        "number": 201, 
+        "credits": 5,
+        "color": colorBlue
+    },
+    {
+        "id": 25,
+        "name": "Estructuras Discretas",
+        "alias": "Discretas",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "7-8"
+            },
+            {
+                "day": "Miercoles",
+                "block": "7-8"
+            }
+        ],
+        "teacher": "Maria Paz Vergara",
+        "number": 202, 
+        "credits": 5,
+        "color": colorBlue
+    },
+    {
+        "id": 26,
+        "name": "Estructuras Discretas",
+        "alias": "Discretas",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            },
+            {
+                "day": "Miercoles",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Jorge Diaz",
+        "number": 203, 
+        "credits": 5,
+        "color": colorBlue
+    },
+    {
+        "id": 27,
+        "name": "Informática teórica",
+        "alias": "TALF",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "5-6"
+            },
+            {
+                "day": "Miercoles",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Andres Moreira",
+        "number": 200, 
+        "credits": 5,
+        "color": colorBlue
+    },
+    {
+        "id": 28,
+        "name": "Ingeniería de software",
+        "alias": "ISW",
+        "hours": [
+            {
+                "day": "Miercoles",
+                "block": "9-10"
+            },
+            {
+                "day": "Jueves",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Iván Zuñiga",
+        "number": 200, 
+        "credits": 5,
+        "color": colorYellow
+    },
+    {
+        "id": 29,
+        "name": "Ingeniería de software",
+        "alias": "ISW",
+        "hours": [
+            {
+                "day": "Miercoles",
+                "block": "9-10"
+            },
+            {
+                "day": "Jueves",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Ricardo Salas",
+        "number": 201, 
+        "credits": 5,
+        "color": colorYellow
+    },
+    {
+        "id": 30,
+        "name": "Innovacion tecnologica",
+        "alias": "InvTec",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            },
+            {
+                "day": "Lunes",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Luis Ramirez",
+        "number": 200, 
+        "credits": 5,
+        "color": colorOrange
+    },
+    {
+        "id": 31,
+        "name": "Inteligencia artificial",
+        "alias": "IA",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "5-6"
+            },
+            {
+                "day": "Lunes",
+                "block": "7-8"
+            }
+        ],
+        "teacher": "Nicolas Rojas",
+        "number": 200, 
+        "credits": 5,
+        "color": colorGreen
+    },
+    {
+        "id": 32,
+        "name": "Introducción a la ciencia de datos",
+        "alias": "IntroDataSci",
+        "hours": [
+            {
+                "day": "Miercoles",
+                "block": "11-12"
+            },
+            {
+                "day": "Miercoles",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Ignacio Loayza",
+        "number": 200, 
+        "credits": 5,
+        "color": colorOrange
+    },
+    {
+        "id": 33,
+        "name": "Introducción a las redes neuronales artificiales and deep learning",
+        "alias": "RedesNeuronales",
+        "hours": [
+            {
+                "day": "Viernes",
+                "block": "9-10"
+            },
+            {
+                "day": "Viernes",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Ricardo Nanculef",
+        "number": 200, 
+        "credits": 5,
+        "color": colorOrange
+    },
+    {
+        "id": 34,
+        "name": "Investigación de operaciones",
+        "alias": "IO",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "9-10"
+            },
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Nicolas Rojas",
+        "number": 200, 
+        "credits": 5,
+        "color": colorRed
+    },
+    {
+        "id": 35,
+        "name": "Investigación de operaciones",
+        "alias": "IO",
+        "hours": [
+            {
+                "day": "Jueves",
+                "block": "9-10"
+            },
+            {
+                "day": "Jueves",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Nicolas Rojas",
+        "number": 201, 
+        "credits": 5,
+        "color": colorRed
+    },
+    {
+        "id": 36,
+        "name": "Lenguajes de programación",
+        "alias": "LP",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "9-10"
+            },
+            {
+                "day": "Miercoles",
+                "block": "9-10"
+            }
+        ],
+        "teacher": "Jose Luis Marti",
+        "number": 200, 
+        "credits": 5,
+        "color": colorBlue
+    },
+    {
+        "id": 37,
+        "name": "Lenguajes de programación",
+        "alias": "LP",
+        "hours": [
+            {
+                "day": "Jueves",
+                "block": "5-6"
+            },
+            {
+                "day": "Viernes",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Jorge Diaz",
+        "number": 200, 
+        "credits": 5,
+        "color": colorBlue
+    },
+    {
+        "id": 38,
+        "name": "Metodologia de la investigacion",
+        "alias": "MIT",
+        "hours": [
+            {
+                "day": "Martes",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Hernan Astudillo",
+        "number": 200, 
+        "credits": 7,
+        "color": colorOrange
+    },
+    {
+        "id": 39,
+        "name": "Organizaciones y sistemas de información",
+        "alias": "OSI",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "9-10"
+            },
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Ana Muñoz",
+        "number": 200, 
+        "credits": 5,
+        "color": colorRed
+    },
+    {
+        "id": 40,
+        "name": "Organizaciones y sistemas de información",
+        "alias": "OSI",
+        "hours": [
+            {
+                "day": "Miercoles",
+                "block": "9-10"
+            },
+            {
+                "day": "Miercoles",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Ana Muñoz",
+        "number": 201, 
+        "credits": 5,
+        "color": colorRed
+    },
+    {
+        "id": 41,
+        "name": "Proceso de creación de videojuegos",
+        "alias": "Videojuego",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "9-10"
+            },
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Jose Luis Marti (*)",
+        "number": 200, 
+        "credits": 5,
+        "color": colorOrange
+    },
+    {
+        "id": 42,
+        "name": "Redes complejas",
+        "alias": "RC",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "9-10"
+            },
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Andres Moreira",
+        "number": 200, 
+        "credits": 5,
+        "color": colorOrange
+    },
+    {
+        "id": 43,
+        "name": "Redes de Computadores",
+        "alias": "Redes",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "3-4"
+            },
+            {
+                "day": "Miercoles",
+                "block": "3-4"
+            }
+        ],
+        "teacher": "Jorge Diaz",
+        "number": 200, 
+        "credits": 5,
+        "color": colorPurple
+    },
+    {
+        "id": 44,
+        "name": "Redes de Computadores",
+        "alias": "Redes",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "5-6"
+            },
+            {
+                "day": "Miercoles",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Jorge Diaz",
+        "number": 201, 
+        "credits": 5,
+        "color": colorPurple
+    },
+    {
+        "id": 46,
+        "name": "Sistemas Distribuidos",
+        "alias": "SD",
+        "hours": [
+            {
+                "day": "Viernes",
+                "block": "9-10"
+            },
+            {
+                "day": "Viernes",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Sebastián Godínez",
+        "number": 200, 
+        "credits": 5,
+        "color": colorPurple
+    },
+    {
+        "id": 47,
+        "name": "Sistemas Operativos",
+        "alias": "SO",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "13-14"
+            },
+            {
+                "day": "Miercoles",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Viktor Tapia",
+        "number": 200, 
+        "credits": 5,
+        "color": colorPurple
+    },
+    {
+        "id": 48,
+        "name": "Taller criptografia aplicada",
+        "alias": "Cripto",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            },
+            {
+                "day": "Lunes",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Jaime Gomez",
+        "number": 200, 
+        "credits": 7,
+        "color": colorOrange
+    },
+    {
+        "id": 49,
+        "name": "Taller de herramientas de modelado de procesos de negocios",
+        "alias": "BPMN",
+        "hours": [
+            {
+                "day": "Jueves",
+                "block": "9-10"
+            },
+            {
+                "day": "Jueves",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Mauricio Olivares",
+        "number": 200, 
+        "credits": 7,
+        "color": colorOrange
+    },
+    {
+        "id": 50,
+        "name": "Taller de programación",
+        "alias": "TProgra",
+        "hours": [
+            {
+                "day": "Martes",
+                "block": "11-12"
+            },
+            {
+                "day": "Martes",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Ernesto Vivanco",
+        "number": 200, 
+        "credits": 5,
+        "color": colorOrange
+    },
+    {
+        "id": 51,
+        "name": "Taller de redes de computadores",
+        "alias": "TRedes",
+        "hours": [
+            {
+                "day": "Viernes",
+                "block": "9-10"
+            },
+            {
+                "day": "Viernes",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Rodrigo Diaz",
+        "number": 200, 
+        "credits": 5,
+        "color": colorOrange
+    },
+    {
+        "id": 52,
+        "name": "Teoría de sistemas",
+        "alias": "TeoSis",
+        "hours": [
+            {
+                "day": "Jueves",
+                "block": "3-4"
+            },
+            {
+                "day": "Jueves",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Dayana Carrillo",
+        "number": 200, 
+        "credits": 5,
+        "color": colorRed
+    },
+    {
+        "id": 53,
+        "name": "Teoría de sistemas",
+        "alias": "TeoSis",
+        "hours": [
+            {
+                "day": "Jueves",
+                "block": "9-10"
+            },
+            {
+                "day": "Jueves",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Dayana Carrillo",
+        "number": 201, 
+        "credits": 5,
+        "color": colorRed
+    },
+    {
+        "id": 54,
+        "name": "Teoría de sistemas",
+        "alias": "TeoSis",
+        "hours": [
+            {
+                "day": "Miercoles",
+                "block": "11-12"
+            },
+            {
+                "day": "Miercoles",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Dayana Carrillo",
+        "number": 202, 
+        "credits": 5,
+        "color": colorRed
+    },
+    {
+        "id": 55,
+        "name": "Testing de interfaces usuarios",
+        "alias": "Testing",
+        "hours": [
+            {
+                "day": "Martes",
+                "block": "3-4"
+            },
+            {
+                "day": "Martes",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Lioubov Dombrovskaia",
+        "number": 200, 
+        "credits": 5,
+        "color": colorOrange
+    },
+    {
+        "id": 56,
+        "name": "Trabajo de titulo",
+        "alias": "Titulo 1",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Luis Hevia",
+        "number": 200, 
+        "credits": 5,
+        "color": colorPink
+    },
+    {
+        "id": 57,
+        "name": "Visualización de datos",
+        "alias": "VD",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "5-6"
+            },
+            {
+                "day": "Miercoles",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Jose Luis Marti",
+        "number": 200, 
+        "credits": 5,
+        "color": colorOrange
     },
 ]
 

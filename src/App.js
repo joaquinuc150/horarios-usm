@@ -6,6 +6,7 @@ import ChooseHorario from './components/chooseHorario';
 import ChoosedRamos from './components/choosedRamos';
 
 function App() {
+  const [checked, setChecked] = useState([]);
   const [ramos, setRamos] = useState([]);
   const [actualCredits, setActualCredits] = useState(0)
 
@@ -30,14 +31,14 @@ function App() {
             <Typography className="subtitle" variant="h5" gutterBottom>
               Horarios 2023-1
             </Typography>
-            <ChooseHorario ramos={ramos} setRamos={setRamos}/>
+            <ChooseHorario ramos={ramos} setRamos={setRamos} checked={checked} setChecked={setChecked}/>
             <Typography className="subtitle" variant="h5" gutterBottom>
               Ramos Seleccionados
             </Typography>
             <Typography className="subtitle" variant="h6" gutterBottom>
               {actualCredits+" creditos"}
             </Typography>
-            <ChoosedRamos ramos={ramos}/>
+            <ChoosedRamos ramos={ramos} setRamos={setRamos} checked={checked} setChecked={setChecked}/>
           </Grid>
           <Grid xs={8}>
             <Horario ramos={ramos} setRamos={setRamos}/>
