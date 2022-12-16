@@ -6,6 +6,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
+import { colorBackground } from '../constants/constants';
 
 export function ChoosedRamos( {ramos, setRamos, checked, setChecked} ) {
     const handleDelete = (value) => () => {
@@ -25,7 +26,7 @@ export function ChoosedRamos( {ramos, setRamos, checked, setChecked} ) {
     };
 
     return (
-    <List dense sx={{ margin: '5%', width: '100%', bgcolor: 'background.paper' }}>
+    <List dense sx={{ margin: '5%', width: '100%', bgcolor: colorBackground }}>
       {ramos.map((value, index) => {
         return (
           <ListItem

@@ -1,3 +1,4 @@
+export const colorBackground = "#56595f"
 export const colorYellow = "#ffee00"
 export const colorBlue = "#6f6fff" 
 export const colorPurple = "#d000ff"

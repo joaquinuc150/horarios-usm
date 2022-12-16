@@ -45,7 +45,7 @@ function Opciones({ramosPage, ramos, setRamos, checked, setChecked}) {
     const labelId = `checkbox-list-secondary-label-${value.name}`;
     return (
       <ListItem
-        sx={{ backgroundColor: value.color}}
+        sx={{ backgroundColor: value.color, borderStyle: 'inset'}}
         key={value.id}
         secondaryAction={
           <Checkbox
@@ -87,9 +87,9 @@ export function ChooseHorario( {ramos, setRamos, checked, setChecked}) {
   }, [page, sortSchedule])
   
   return (
-    <List dense sx={{ margin: '5%', width: '100%', bgcolor: 'background.paper' }}>
+    <List dense sx={{ margin: '5%', width: '100%' }}>
       <Opciones ramosPage={ramosPage} setRamosPage={setRamosPage} ramos={ramos} setRamos={setRamos} checked={checked} setChecked={setChecked} />
-      <Pagination count={numberPages} page={page} onChange={(e, value) => setPage(value)} />
+      <Pagination color='primary' count={numberPages} page={page} onChange={(e, value) => setPage(value)} />
     </List>
   );
 }
