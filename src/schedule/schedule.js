@@ -19,6 +19,25 @@ const schedule = [
         "color": "#fff000"
     },
     {
+        "id": 2,
+        "name": "Gestión de proyectos informáticos",
+        "alias": "Feria 1",
+        "hours": [
+            {
+                "day": "Jueves",
+                "block": "3-4"
+            },
+            {
+                "day": "Jueves",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Cristian Correa",
+        "number": 201, 
+        "credits": 5,
+        "color": "#fff000"
+    },
+    {
         "id": 3,
         "name": "Bases de datos",
         "alias": "BD",
@@ -95,7 +114,7 @@ const schedule = [
         "color": "#d000ff"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Arquitectura y organización de computadores",
         "alias": "Arqui",
         "hours": [
@@ -114,7 +133,7 @@ const schedule = [
         "color": "#d000ff"
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Análisis y diseño de software",
         "alias": "Anal",
         "hours": [
@@ -133,7 +152,7 @@ const schedule = [
         "color": "#f2f80e"
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Análisis y diseño de software",
         "alias": "Anal",
         "hours": [
@@ -152,7 +171,7 @@ const schedule = [
         "color": "#f2f80e"
     },
     {
-        "id": 9,
+        "id": 10,
         "name": "Algoritmos y complejidad",
         "alias": "Algoco",
         "hours": [
@@ -171,7 +190,7 @@ const schedule = [
         "color": "#6f6fff" 
     },
     {
-        "id": 10,
+        "id": 11,
         "name": "Ingeniería, informática y sociedad",
         "alias": "Infosoc",
         "hours": [
@@ -190,7 +209,7 @@ const schedule = [
         "color": "#ff0080"
     },
     {
-        "id": 11,
+        "id": 12,
         "name": "Estadística computacional",
         "alias": "Estaca",
         "hours": [
@@ -209,7 +228,7 @@ const schedule = [
         "color": "#008000"
     },
     {
-        "id": 12,
+        "id": 13,
         "name": "Estadística computacional",
         "alias": "Estaca",
         "hours": [
@@ -228,7 +247,7 @@ const schedule = [
         "color": "#008000"
     },
     {
-        "id": 13,
+        "id": 14,
         "name": "Información y matemática financiera",
         "alias": "IMAFI",
         "hours": [
@@ -247,7 +266,7 @@ const schedule = [
         "color": "#00ffff"
     },
     {
-        "id": 14,
+        "id": 15,
         "name": "Información y matemática financiera",
         "alias": "IMAFI",
         "hours": [
@@ -263,7 +282,7 @@ const schedule = [
         "teacher": "Claudio Mena",
         "number": 201, 
         "credits": 5,
-        "color": "#008000"
+        "color": "#00ffff"
     },
 ]
 
