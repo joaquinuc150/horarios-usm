@@ -1,23 +1,49 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react';
+import { Box, Grid, Typography } from '@mui/material';
+import Horario from './components/horario'
+import ChooseHorario from './components/chooseHorario';
+import ChoosedRamos from './components/choosedRamos';
 
 function App() {
+  const [ramos, setRamos] = useState([]);
+  const [actualCredits, setActualCredits] = useState(0)
+
+  useEffect(() =>{
+      function getSum(total, value) {
+          return total + value.credits;
+      }
+      const calculateSCT = (ramos) => {
+          return ramos.reduce(getSum,0)
+      }
+      setActualCredits(calculateSCT(ramos))
+  }, [ramos])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Typography className="title" variant="h1" gutterBottom>
+        SIGAN'T
+      </Typography>
+      <Box>
+        <Grid container>
+          <Grid xs={4}>
+            <Typography className="subtitle" variant="h5" gutterBottom>
+              Horarios 2023-1
+            </Typography>
+            <ChooseHorario ramos={ramos} setRamos={setRamos}/>
+            <Typography className="subtitle" variant="h5" gutterBottom>
+              Ramos Seleccionados
+            </Typography>
+            <Typography className="subtitle" variant="h6" gutterBottom>
+              {actualCredits+" creditos"}
+            </Typography>
+            <ChoosedRamos ramos={ramos}/>
+          </Grid>
+          <Grid xs={8}>
+            <Horario ramos={ramos} setRamos={setRamos}/>
+          </Grid>
+        </Grid>
+      </Box>
     </div>
   );
 }
