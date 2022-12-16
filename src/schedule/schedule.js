@@ -114,25 +114,6 @@ const schedule = [
         "color": "#d000ff"
     },
     {
-        "id": 7,
-        "name": "Arquitectura y organización de computadores",
-        "alias": "Arqui",
-        "hours": [
-            {
-                "day": "Martes",
-                "block": "3-4"
-            },
-            {
-                "day": "Miercoles",
-                "block": "3-4"
-            }
-        ],
-        "teacher": "Mauricio Solar",
-        "number": 201, 
-        "credits": 5,
-        "color": "#d000ff"
-    },
-    {
         "id": 8,
         "name": "Análisis y diseño de software",
         "alias": "Anal",
