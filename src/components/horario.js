@@ -22,12 +22,6 @@ const Header = styled(Paper)(({ theme }) => ({
     overflow: 'hidden',
 }));
 
-const whenNotMobileDevice = (component) => {
-    if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        return component
-    }
-}
-
 const bloques = [
     {
         "name": "-",
@@ -73,12 +67,18 @@ const bloques = [
 
 
 function Columna({name, size, items}) {
+    const styleColumna = { 
+        color: '#000000',
+        fontWeight: 'bold', 
+        height: '20px',
+        overflow: 'hidden'
+    }
     return (
-    <Grid xs={size}>
+    <Grid item xs={size}>
         <Header sx={{ fontWeight: 'bolder'}}>{name}</Header>
         {
             items.map((i) => {
-            return <Item sx={{ color: '#000000', backgroundColor: i.color, fontWeight: 'bold'}}>{i.alias}</Item>
+            return <Item sx={{...styleColumna, backgroundColor: i.color}}>{i.alias}</Item>
         }
         )
         }
@@ -147,9 +147,9 @@ export function Horario({ramos, setRamos}) {
 
     
     return (
-    <Box sx={{ marginLeft: '10%', marginTop: '5%'}}>
-      <Grid container spacing={2}>
-        {whenNotMobileDevice(Columna({ "name": "Bloques", "size": 1, "items": bloques }))}
+    <Box sx={{ marginLeft: '5%', marginRight: '5%' }}>
+      <Grid container>
+        <Columna name="Bloques" size={1} items={bloques}/>
         <Columna name="Lunes" size={2} items={lunes}/>
         <Columna name="Martes" size={2} items={martes}/>
         <Columna name="Miercoles" size={2} items={miercoles}/>

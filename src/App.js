@@ -41,6 +41,9 @@ function App() {
             <ChoosedRamos ramos={ramos} setRamos={setRamos} checked={checked} setChecked={setChecked}/>
           </Grid>
           <Grid md={12} lg={8}>
+            <Typography className="subtitle" variant="h5" gutterBottom>
+              Horario Ideal
+            </Typography>
             <Horario ramos={ramos} setRamos={setRamos}/>
           </Grid>
         </Grid>
