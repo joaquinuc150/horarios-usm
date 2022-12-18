@@ -1,6 +1,6 @@
 import { colorAqua, colorBlue, colorGreen, colorOrange, colorPink, colorPurple, colorRed, colorYellow } from "../constants/constants";
 
-const schedule = [
+export const scheduleInf = [
     {
         "id": 1,
         "name": "Gestión de proyectos informáticos",
@@ -1057,6 +1057,748 @@ const schedule = [
         "credits": 5,
         "color": colorOrange
     },
-]
+];
 
-export default schedule;
+export const scheduleQuimica = [
+    {
+        "id": 101,
+        "name": "Análisis de procesos químicos",
+        "alias": "APQ",
+        "hours": [
+            {
+                "day": "Martes",
+                "block": "5-6"
+            },
+            {
+                "day": "Miercoles",
+                "block": "9-10"
+            },
+            {
+                "day": "Viernes",
+                "block": "3-4"
+            }
+        ],
+        "teacher": "Daniel Navia",
+        "number": 200, 
+        "credits": 7,
+        "color": colorGreen
+    },
+    {
+        "id": 102,
+        "name": "Análisis y diseño de experimentos industriales",
+        "alias": "ADEI",
+        "hours": [
+            {
+                "day": "Martes",
+                "block": "9-10"
+            },
+            {
+                "day": "Viernes",
+                "block": "7-8"
+            }
+        ],
+        "teacher": "Daniel Navia",
+        "number": 200, 
+        "credits": 5,
+        "color": colorGreen
+    },
+    {
+        "id": 103,
+        "name": "Balance de materia",
+        "alias": "Materia",
+        "hours": [
+            {
+                "day": "Martes",
+                "block": "1-2"
+            },
+            {
+                "day": "Jueves",
+                "block": "1-2"
+            },
+            {
+                "day": "Jueves",
+                "block": "13-14"
+            },
+            {
+                "day": "Viernes",
+                "block": "11-12"
+            },
+
+        ],
+        "teacher": "Gonzalo Nuñez",
+        "number": 200, 
+        "credits": 8,
+        "color": colorRed
+    },
+    {
+        "id": 104,
+        "name": "Desafío de la matriz energética de Chile",
+        "alias": "DME",
+        "hours": [
+            {
+                "day": "Viernes",
+                "block": "11-12"
+            },
+            {
+                "day": "Viernes",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Maria Valenzuela",
+        "number": 200, 
+        "credits": 5,
+        "color": colorPurple
+    },
+    {
+        "id": 105,
+        "name": "Diseño de procesos",
+        "alias": "Procesos",
+        "hours": [
+            {
+                "day": "Miercoles",
+                "block": "5-6"
+            },
+            {
+                "day": "Miercoles",
+                "block": "7-8"
+            }
+        ],
+        "teacher": "Patricio Nuñez",
+        "number": 200, 
+        "credits": 5,
+        "color": colorGreen
+    },
+    {
+        "id": 106,
+        "name": "Fenómenos de transporte",
+        "alias": "FdT",
+        "hours": [
+            {
+                "day": "Miercoles",
+                "block": "5-6"
+            },
+            {
+                "day": "Jueves",
+                "block": "9-10"
+            }
+        ],
+        "teacher": "Maria Paz Dominguez",
+        "number": 200, 
+        "credits": 7,
+        "color": colorRed
+    },
+    {
+        "id": 107,
+        "name": "Fundamentos de control industrial",
+        "alias": "FCI",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "3-4"
+            },
+            {
+                "day": "Martes",
+                "block": "3-4"
+            },
+            {
+                "day": "Miercoles",
+                "block": "3-4"
+            }
+        ],
+        "teacher": "Ivan Cornejo",
+        "number": 200, 
+        "credits": 8,
+        "color": colorGreen
+    },
+    {
+        "id": 108,
+        "name": "Fundamentos de ingenieria bioquimica",
+        "alias": "FIB",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "5-6"
+            },
+            {
+                "day": "Miercoles",
+                "block": "9-10"
+            }
+        ],
+        "teacher": "Sergio Almonacid",
+        "number": 200, 
+        "credits": 5,
+        "color": colorPurple
+    },
+    {
+        "id": 109,
+        "name": "Fundamentos de termodinamica",
+        "alias": "FT",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            },
+            {
+                "day": "Viernes",
+                "block": "3-4"
+            }
+        ],
+        "teacher": "Alberto Ramirez",
+        "number": 200, 
+        "credits": 5,
+        "color": colorPurple
+    },
+    {
+        "id": 110,
+        "name": "Ingeniería ambiental",
+        "alias": "Ambiental",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            },
+            {
+                "day": "Viernes",
+                "block": "3-4"
+            }
+        ],
+        "teacher": "Fabián Guerrero",
+        "number": 200, 
+        "credits": 4,
+        "color": colorGreen
+    },
+    {
+        "id": 111,
+        "name": "Ingeniería de reactores",
+        "alias": "IR",
+        "hours": [
+            {
+                "day": "Miercoles",
+                "block": "5-6"
+            },
+            {
+                "day": "Jueves",
+                "block": "3-4"
+            },
+            {
+                "day": "Jueves",
+                "block": "9-10"
+            },
+            {
+                "day": "Jueves",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Gonzalo Nuñez",
+        "number": 200, 
+        "credits": 7,
+        "color": colorGreen
+    },
+    {
+        "id": 112,
+        "name": "Laboratorio de investigacion",
+        "alias": "LI",
+        "hours": [
+            {
+                "day": "Viernes",
+                "block": "5-6"
+            },
+            {
+                "day": "Viernes",
+                "block": "7-8"
+            }
+        ],
+        "teacher": "Gonzalo Nuñez",
+        "number": 200, 
+        "credits": 7,
+        "color": colorPurple
+    },
+    {
+        "id": 113,
+        "name": "Laboratorio de procesos",
+        "alias": "LI",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "3-4"
+            },
+            {
+                "day": "Lunes",
+                "block": "5-6"
+            },
+            {
+                "day": "Lunes",
+                "block": "7-8"
+            },
+            {
+                "day": "Lunes",
+                "block": "9-10"
+            },
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            },
+        ],
+        "teacher": "Rodrigo Benavides",
+        "number": 200, 
+        "credits": 8,
+        "color": colorGreen
+    },
+    {
+        "id": 114,
+        "name": "Legislacion ambiental",
+        "alias": "LA",
+        "hours": [
+            {
+                "day": "Viernes",
+                "block": "11-12"
+            },
+            {
+                "day": "Viernes",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Proceso Interno",
+        "number": 200, 
+        "credits": 5,
+        "color": colorPurple
+    },
+    {
+        "id": 115,
+        "name": "Maquinaria industrial auxiliar",
+        "alias": "MIA",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "1-2"
+            },
+            {
+                "day": "Viernes",
+                "block": "1-2"
+            }
+        ],
+        "teacher": "Juan Mora",
+        "number": 200, 
+        "credits": 4,
+        "color": colorPink
+    },
+    {
+        "id": 116,
+        "name": "Mecánica de sistemas fluidos",
+        "alias": "Fluidos",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "7-8"
+            },
+            {
+                "day": "Lunes",
+                "block": "9-10"
+            },
+            {
+                "day": "Jueves",
+                "block": "9-10"
+            }
+        ],
+        "teacher": "Miriam Roth",
+        "number": 200, 
+        "credits": 7,
+        "color": colorPink
+    },
+    {
+        "id": 117,
+        "name": "Modelación comp. de fenómenos de transporte",
+        "alias": "MFT",
+        "hours": [
+            {
+                "day": "Jueves",
+                "block": "11-12"
+            },
+            {
+                "day": "Viernes",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "NN",
+        "number": 200, 
+        "credits": 8,
+        "color": colorPurple
+    },
+    {
+        "id": 118,
+        "name": "Personas y organización en la industria de procesos",
+        "alias": "PIP",
+        "hours": [
+            {
+                "day": "Martes",
+                "block": "9-10"
+            },
+            {
+                "day": "Miercoles",
+                "block": "9-10"
+            }
+        ],
+        "teacher": "Pedro Arriagada",
+        "number": 200, 
+        "credits": 5,
+        "color": colorGreen
+    },
+    {
+        "id": 119,
+        "name": "Procesamiento de alimentos por deshidratación y por fermentación",
+        "alias": "PDF",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "9-10"
+            },
+            {
+                "day": "Miercoles",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Cristian Ramirez",
+        "number": 200, 
+        "credits": 7,
+        "color": colorPurple
+    },
+    {
+        "id": 120,
+        "name": "Procesos avanzados de separación por membranas y barreras sólidas",
+        "alias": "PMB",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "7-8"
+            },
+            {
+                "day": "Miercoles",
+                "block": "7-8"
+            }
+        ],
+        "teacher": "Proceso Interno",
+        "number": 200, 
+        "credits": 5,
+        "color": colorPurple
+    },
+    {
+        "id": 121,
+        "name": "Proyectos",
+        "alias": "P",
+        "hours": [
+            {
+                "day": "Viernes",
+                "block": "3-4"
+            },
+            {
+                "day": "Viernes",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Rodrigo Benavides",
+        "number": 200, 
+        "credits": 7,
+        "color": colorGreen
+    },
+    {
+        "id": 122,
+        "name": "Proyectos Específicos",
+        "alias": "PE",
+        "hours": [
+            {
+                "day": "Viernes",
+                "block": "7-8"
+            },
+            {
+                "day": "Viernes",
+                "block": "9-10"
+            }
+        ],
+        "teacher": "Proceso Interno",
+        "number": 200, 
+        "credits": 8,
+        "color": colorPurple
+    },
+    {
+        "id": 123,
+        "name": "Simulacion de procesos",
+        "alias": "SP",
+        "hours": [
+            {
+                "day": "Jueves",
+                "block": "9-10"
+            }
+        ],
+        "teacher": "Andres Donoso",
+        "number": 200, 
+        "credits": 7,
+        "color": colorPurple
+    },
+    {
+        "id": 124,
+        "name": "Taller de ingeniería quimica IV",
+        "alias": "T 4",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "9-10"
+            }
+        ],
+        "teacher": "Pedro Arriagada",
+        "number": 200, 
+        "credits": 2,
+        "color": colorGreen
+    },
+    {
+        "id": 125,
+        "name": "Taller de ingeniería quimica V",
+        "alias": "T 5",
+        "hours": [
+            {
+                "day": "Jueves",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Valentina Wyman",
+        "number": 200, 
+        "credits": 3,
+        "color": colorGreen
+    },
+    {
+        "id": 126,
+        "name": "Taller de ingeniería quimica I",
+        "alias": "T 1",
+        "hours": [
+            {
+                "day": "Miercoles",
+                "block": "3-4"
+            }
+        ],
+        "teacher": "Pedro Arriagada",
+        "number": 201, 
+        "credits": 1,
+        "color": colorGreen
+    },
+    {
+        "id": 127,
+        "name": "Taller de ingeniería quimica I",
+        "alias": "T 1",
+        "hours": [
+            {
+                "day": "Martes",
+                "block": "15-16"
+            }
+        ],
+        "teacher": "Cristian Didyk",
+        "number": 202, 
+        "credits": 1,
+        "color": colorGreen
+    },
+    {
+        "id": 128,
+        "name": "Taller de ingeniería quimica II",
+        "alias": "T 2",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Pedro Arriagada",
+        "number": 200, 
+        "credits": 1,
+        "color": colorGreen
+    },
+    {
+        "id": 129,
+        "name": "Taller de ingeniería quimica III",
+        "alias": "T 3",
+        "hours": [
+            {
+                "day": "Viernes",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Cristian Didyk",
+        "number": 200, 
+        "credits": 1,
+        "color": colorGreen
+    },
+    {
+        "id": 130,
+        "name": "Tecnologias emergentes",
+        "alias": "TE",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "7-8"
+            },
+            {
+                "day": "Martes",
+                "block": "3-4"
+            }
+        ],
+        "teacher": "NN",
+        "number": 200, 
+        "credits": 5,
+        "color": colorPurple
+    },
+    {
+        "id": 131,
+        "name": "Termodinámica de procesos",
+        "alias": "Termo 1",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "3-4"
+            },
+            {
+                "day": "Lunes",
+                "block": "11-12"
+            },
+            {
+                "day": "Martes",
+                "block": "9-10"
+            },
+            {
+                "day": "Miercoles",
+                "block": "11-12"
+            },
+            {
+                "day": "Viernes",
+                "block": "9-10"
+            },
+            {
+                "day": "Viernes",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Tania Sandoval",
+        "number": 200, 
+        "credits": 8,
+        "color": colorRed
+    },
+    {
+        "id": 132,
+        "name": "Termodinámica para ingeniería química",
+        "alias": "Termo 2",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "13-14"
+            },
+            {
+                "day": "Martes",
+                "block": "3-4"
+            },
+            {
+                "day": "Martes",
+                "block": "9-10"
+            },
+            {
+                "day": "Jueves",
+                "block": "11-12"
+            },
+            {
+                "day": "Jueves",
+                "block": "13-14"
+            }
+        ],
+        "teacher": "Tania Sandoval",
+        "number": 200, 
+        "credits": 8,
+        "color": colorRed
+    },
+    {
+        "id": 133,
+        "name": "Titulacion",
+        "alias": "Titulacion 1",
+        "hours": [
+            {
+                "day": "Viernes",
+                "block": "3-4"
+            },
+            {
+                "day": "Viernes",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "Ivan Cornejo",
+        "number": 200, 
+        "credits": 7,
+        "color": colorGreen
+    },
+    {
+        "id": 134,
+        "name": "Titulacion",
+        "alias": "Titulacion 2",
+        "hours": [
+            {
+                "day": "Miercoles",
+                "block": "7-8"
+            },
+            {
+                "day": "Miercoles",
+                "block": "9-10"
+            }
+        ],
+        "teacher": "Maria Paz Dominguez",
+        "number": 200, 
+        "credits": 20,
+        "color": colorGreen
+    },
+    {
+        "id": 135,
+        "name": "Transferencia de calor",
+        "alias": "Calor",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "9-10"
+            },
+            {
+                "day": "Martes",
+                "block": "11-12"
+            },
+            {
+                "day": "Miercoles",
+                "block": "11-12"
+            },
+            {
+                "day": "Viernes",
+                "block": "11-12"
+            }
+        ],
+        "teacher": "Paula Guerra",
+        "number": 200, 
+        "credits": 7,
+        "color": colorRed
+    },
+    {
+        "id": 136,
+        "name": "Transferencia de materia",
+        "alias": "Materia",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "3-4"
+            },
+            {
+                "day": "Martes",
+                "block": "11-12"
+            },
+            {
+                "day": "Miercoles",
+                "block": "3-4"
+            },
+            {
+                "day": "Viernes",
+                "block": "3-4"
+            }
+        ],
+        "teacher": "Carolyn Palma",
+        "number": 200, 
+        "credits": 8,
+        "color": colorRed
+    },
+];

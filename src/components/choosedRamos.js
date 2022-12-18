@@ -26,7 +26,7 @@ export function ChoosedRamos( {ramos, setRamos, checked, setChecked} ) {
     };
 
     return (
-    <List dense sx={{ margin: '5%', width: '100%', bgcolor: colorBackground }}>
+    <List dense sx={{ width: '100%', bgcolor: colorBackground }}>
       {ramos.map((value, index) => {
         return (
           <ListItem

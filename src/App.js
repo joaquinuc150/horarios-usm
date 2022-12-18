@@ -22,12 +22,12 @@ function App() {
 
   return (
     <div>
-      <Typography className="title" variant="h1" gutterBottom>
+      <Typography className="title" variant="h3" gutterBottom>
         SIGAN'T
       </Typography>
       <Box>
         <Grid container>
-          <Grid xs={4}>
+          <Grid sx={{ padding: '1%' }} md={12} lg={4}>
             <Typography className="subtitle" variant="h5" gutterBottom>
               Horarios 2023-1
             </Typography>
@@ -40,7 +40,7 @@ function App() {
             </Typography>
             <ChoosedRamos ramos={ramos} setRamos={setRamos} checked={checked} setChecked={setChecked}/>
           </Grid>
-          <Grid xs={8}>
+          <Grid md={12} lg={8}>
             <Horario ramos={ramos} setRamos={setRamos}/>
           </Grid>
         </Grid>

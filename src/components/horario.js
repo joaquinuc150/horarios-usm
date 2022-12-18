@@ -10,6 +10,7 @@ const Item = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    overflow: 'hidden',
   }));
 
 const Header = styled(Paper)(({ theme }) => ({
@@ -18,7 +19,14 @@ const Header = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    overflow: 'hidden',
 }));
+
+const whenNotMobileDevice = (component) => {
+    if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        return component
+    }
+}
 
 const bloques = [
     {
@@ -141,7 +149,7 @@ export function Horario({ramos, setRamos}) {
     return (
     <Box sx={{ marginLeft: '10%', marginTop: '5%'}}>
       <Grid container spacing={2}>
-        <Columna name="Bloques" size={1} items={bloques}/>
+        {whenNotMobileDevice(Columna({ "name": "Bloques", "size": 1, "items": bloques }))}
         <Columna name="Lunes" size={2} items={lunes}/>
         <Columna name="Martes" size={2} items={martes}/>
         <Columna name="Miercoles" size={2} items={miercoles}/>

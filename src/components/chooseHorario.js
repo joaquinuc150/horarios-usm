@@ -1,12 +1,7 @@
 import '../App.css';
-import React, { useEffect } from 'react'
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import Pagination  from '@mui/material/Pagination';
-import Checkbox from '@mui/material/Checkbox';
-import schedule from '../schedule/schedule';
+import { useState, useEffect } from 'react'
+import { FormControl, Select, MenuItem, Checkbox, Pagination, ListItemText, ListItemButton, ListItem, List } from '@mui/material';
+import { scheduleInf, scheduleQuimica } from '../schedule/schedule';
 
 function compare( a, b ) {
   if ( a.name < b.name ){
@@ -76,18 +71,45 @@ function Opciones({ramosPage, ramos, setRamos, checked, setChecked}) {
 
 export function ChooseHorario( {ramos, setRamos, checked, setChecked}) {
   const rowPerPages = 5
-  const numberPages = Math.ceil(schedule.length / rowPerPages)
-  const sortSchedule = schedule.sort(compare)
-  const [page, setPage] = React.useState(1);
-  const [ramosPage, setRamosPage] = React.useState(sortSchedule.slice(0,rowPerPages))
+  const [schedule, setSchedule] = useState(scheduleInf)
+  const [numberPages, setNumberPages] = useState(Math.ceil(schedule.length / rowPerPages))
+  const [sortSchedule, setSortSchedule] = useState(schedule.sort(compare))
+  const [page, setPage] = useState(1);
+  const [ramosPage, setRamosPage] = useState(sortSchedule.slice(0,rowPerPages))
 
   useEffect(() => {
     const newOptions = sortSchedule.slice((page-1)*rowPerPages,page*rowPerPages)
     setRamosPage(newOptions)
   }, [page, sortSchedule])
+
+  useEffect(() => {
+    setNumberPages(Math.ceil(schedule.length / rowPerPages))
+    setSortSchedule(schedule.sort(compare))
+    setPage(1)
+  }, [schedule])
+
+  const handleChange = (event) => {
+    setSchedule(event.target.value);
+  };
   
   return (
-    <List dense sx={{ margin: '5%', width: '100%' }}>
+    <List dense sx={{ width: '100%' }}>
+      <FormControl>
+        <Select
+          sx={{ backgroundColor: '#fff000'}}
+          labelId="demo-simple-select-label"
+          id="select-departament"
+          value={schedule}
+          label="Departamento"
+          onChange={handleChange}
+        >
+            <MenuItem disabled value="">
+              <em>Departamento</em>
+            </MenuItem>
+            <MenuItem value={scheduleInf}>Informatica</MenuItem>
+            <MenuItem value={scheduleQuimica}>Quimica</MenuItem>
+        </Select>
+      </FormControl>
       <Opciones ramosPage={ramosPage} setRamosPage={setRamosPage} ramos={ramos} setRamos={setRamos} checked={checked} setChecked={setChecked} />
       <Pagination color='primary' count={numberPages} page={page} onChange={(e, value) => setPage(value)} />
     </List>
