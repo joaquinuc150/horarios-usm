@@ -1,14 +1,16 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import { useCookies } from 'react-cookie';
 import { Box, Grid, Typography } from '@mui/material';
 import Horario from './components/horario'
 import ChooseHorario from './components/chooseHorario';
 import ChoosedRamos from './components/choosedRamos';
 
 function App() {
-  const [checked, setChecked] = useState([]);
-  const [ramos, setRamos] = useState([]);
-  const [actualCredits, setActualCredits] = useState(0)
+  const [cookies, setCookies] = useCookies([]);
+  const [checked, setChecked] = useState(cookies.checked || []);
+  const [ramos, setRamos] = useState(cookies.ramos || []);
+  const [actualCredits, setActualCredits] = useState(0);
 
   useEffect(() =>{
       function getSum(total, value) {
@@ -19,6 +21,11 @@ function App() {
       }
       setActualCredits(calculateSCT(ramos))
   }, [ramos])
+
+  useEffect(() =>{
+    setCookies('checked', checked);
+    setCookies('ramos', ramos);
+  }, [ramos, checked, setCookies])
 
   return (
     <div>
@@ -38,7 +45,7 @@ function App() {
             <Typography className="subtitle" variant="h6" gutterBottom>
               {actualCredits+" creditos"}
             </Typography>
-            <ChoosedRamos ramos={ramos} setRamos={setRamos} checked={checked} setChecked={setChecked}/>
+            <ChoosedRamos ramos={ramos} setRamos={setRamos} checked={checked} setChecked={setChecked} setCookies={setCookies}/>
           </Grid>
           <Grid md={12} lg={8}>
             <Typography className="subtitle" variant="h5" gutterBottom>
