@@ -444,15 +444,15 @@ export const scheduleInf = [
         "alias": "Discretas",
         "hours": [
             {
-                "day": "Lunes",
-                "block": "7-8"
+                "day": "Jueves",
+                "block": "13-14"
             },
             {
-                "day": "Miercoles",
-                "block": "7-8"
+                "day": "Viernes",
+                "block": "9-10"
             }
         ],
-        "teacher": "Jorge Diaz",
+        "teacher": "Cristopher Arenas",
         "number": 201, 
         "credits": 5,
         "color": colorBlue
@@ -483,14 +483,14 @@ export const scheduleInf = [
         "hours": [
             {
                 "day": "Lunes",
-                "block": "11-12"
+                "block": "5-6"
             },
             {
                 "day": "Miercoles",
-                "block": "11-12"
+                "block": "5-6"
             }
         ],
-        "teacher": "Jorge Diaz",
+        "teacher": "Maria Paz Vergara",
         "number": 203, 
         "credits": 5,
         "color": colorBlue
@@ -802,11 +802,11 @@ export const scheduleInf = [
         "hours": [
             {
                 "day": "Lunes",
-                "block": "3-4"
+                "block": "1-2"
             },
             {
                 "day": "Miercoles",
-                "block": "3-4"
+                "block": "1-2"
             }
         ],
         "teacher": "Jorge Diaz",
@@ -820,12 +820,12 @@ export const scheduleInf = [
         "alias": "Redes",
         "hours": [
             {
-                "day": "Lunes",
-                "block": "5-6"
+                "day": "Martes",
+                "block": "1-2"
             },
             {
-                "day": "Miercoles",
-                "block": "5-6"
+                "day": "Jueves",
+                "block": "1-2"
             }
         ],
         "teacher": "Jorge Diaz",
@@ -1056,6 +1056,25 @@ export const scheduleInf = [
         "number": 200, 
         "credits": 5,
         "color": colorOrange
+    },
+    {
+        "id": 58,
+        "name": "Optimización",
+        "alias": "Opti",
+        "hours": [
+            {
+                "day": "Lunes",
+                "block": "5-6"
+            },
+            {
+                "day": "Miercoles",
+                "block": "5-6"
+            }
+        ],
+        "teacher": "NN",
+        "number": 200, 
+        "credits": 5,
+        "color": colorRed
     },
 ];
 
