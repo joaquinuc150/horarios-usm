@@ -116,25 +116,6 @@ export const scheduleInf = [
         "color": colorPurple
     },
     {
-        "id": 7,
-        "name": "Analisis inteligente de datos",
-        "alias": "AID",
-        "hours": [
-            {
-                "day": "Martes",
-                "block": "9-10"
-            },
-            {
-                "day": "Jueves",
-                "block": "9-10"
-            }
-        ],
-        "teacher": "Carlos Valle",
-        "number": 200, 
-        "credits": 5,
-        "color": colorOrange
-    },
-    {
         "id": 8,
         "name": "Análisis y diseño de software",
         "alias": "Anal",
@@ -830,25 +811,6 @@ export const scheduleInf = [
         ],
         "teacher": "Jorge Diaz",
         "number": 201, 
-        "credits": 5,
-        "color": colorPurple
-    },
-    {
-        "id": 46,
-        "name": "Sistemas Distribuidos",
-        "alias": "SD",
-        "hours": [
-            {
-                "day": "Viernes",
-                "block": "9-10"
-            },
-            {
-                "day": "Viernes",
-                "block": "11-12"
-            }
-        ],
-        "teacher": "Sebastián Godínez",
-        "number": 200, 
         "credits": 5,
         "color": colorPurple
     },
