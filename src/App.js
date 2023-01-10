@@ -5,6 +5,7 @@ import { Box, Grid, Typography } from '@mui/material';
 import Horario from './components/horario'
 import ChooseHorario from './components/chooseHorario';
 import ChoosedRamos from './components/choosedRamos';
+import AddRamo from './components/addRamo';
 
 function App() {
   const [cookies, setCookies] = useCookies([]);
