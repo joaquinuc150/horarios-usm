@@ -37,7 +37,7 @@ function App() {
         <Grid container>
           <Grid sx={{ padding: '1%' }} md={12} lg={4}>
             <Typography className="subtitle" variant="h5" gutterBottom>
-              Horarios 2023-1
+              Horarios 2023-2
             </Typography>
             <ChooseHorario ramos={ramos} setRamos={setRamos} checked={checked} setChecked={setChecked}/>
             <Typography className="subtitle" variant="h5" gutterBottom>
